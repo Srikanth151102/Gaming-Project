@@ -1,0 +1,101 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* /---------page3-content------/ */
+.character{
+    background-color: black;
+    padding-top:80px;
+    display: flex;
+    min-height:680px;
+}
+.gun-man{
+    height:400px;
+    margin-top: 70px;
+}
+.building{
+    height:450px;
+}
+.light-color{
+    background-color: rgb(51, 49, 49,0.4);
+    left:90px;
+    position:absolute;
+    gap:100px;
+    bottom:120px;
+    width:90%;
+    top: 10px;
+    min-height: 650px;
+}
+.pg3-cnt{
+    display: flex;
+    justify-content: space-around;
+}
+.chap-content{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.chap-content>h1{
+    margin-bottom: 70px;
+    color:rgb(59, 174, 240);
+    font-size: 60px;
+}
+.chap-content>p:nth-child(2){
+    color:white;
+    font-size: 30px;
+}
+.chap-content>p:nth-child(3){
+    color:rgb(59, 174, 240);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.chap-content>p:nth-child(4){
+    color:white;
+    font-size: 25px;
+    line-height: 40px;
+}
+.lefti1{
+    color:white;
+    font-size: 50px;
+    z-index: 3;
+    position: absolute;
+    left:45px;
+    top:530px;
+}
+.righti2{
+    color:white;
+    font-size: 50px;
+    z-index: 3;
+    position: absolute;
+    right:0px;
+    top:530px;
+}
+/* /--------game-image-start-------/ */
+.scroll-img{
+    display: flex;
+    margin-left: 80px;  
+    justify-content: space-around;
+    width:90%;
+    height:160px;
+    background-color: aquamarine;
+    overflow:hidden;
+    border: 1px solid black;
+}
+.game-img{
+    min-height:150px;
+    min-width:150px;
+     border-radius: 30px;
+    border:1px solid white;
+    overflow: hidden;
+}
+
+/* /--------game-image-end-------/
+/---------chapter 3 media query start-------------/ */
+@media only screen and (min-width:300px) and (max-width:1100px) {
+    .chap-content
+    {
+        width: 100%;
+    }   
+}
+/* /---------chapter 3 media query start-------------/ */

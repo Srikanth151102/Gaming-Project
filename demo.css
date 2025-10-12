@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+nav {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    font-family: sans-serif;
+    position: fixed;
+    color: #00FFFF;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    top: 0px;
+    z-index: 999;
+} 
+nav h1 {
+    font-size: 45px;
+}
+nav i
+{
+    font-size: 25px;
+}
+nav .subNav {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    transition: all 1s;
+    position: relative;
+}
+nav .subNav a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    /* background-color: wheat; */
+    padding: 5px;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 4;
+}
+.bullet
+{
+    position: absolute;
+    left: -10px;
+    bottom: -25px;
+    transition: all 1s;
+    z-index: 0;
+}
+
+.a1:hover~.bullet
+{
+     left: -10px;
+    bottom: -25px;
+}
+.a2:hover~.bullet
+{
+     left: 90px;
+    bottom: -25px;  
+}
+.a3:hover~.bullet
+{
+     left: 210px;
+    bottom: -25px;  
+}
+.a4:hover~.bullet
+{
+     left: 350px;
+    bottom: -25px;  
+}
+.bullet img
+{
+    width: 80px;
+    height: 40px;
+}
+input:checked~.subNav
+{
+    left: 75%;
+}
+nav label
+{
+    display: none;
+}
+input
+{
+    display: none;
+}
+.btn1
+{
+    border: 1.5px solid white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+    color: white;
+    background-color: transparent;
+}
+.bumblebee
+{
+    width: 100px;
+    height: 100px;
+}
+.game-page
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./reyna-3840x2160-14059\ 1\ \(1\).png);
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-line
+{
+    display: flex;
+    color: white;
+    height: 60px;
+    position: relative;
+    width: 260px;
+    float: right;
+    padding-top: 10px;
+}
+.border-line p
+{
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    top: 22px;
+    letter-spacing: 3px;
+    left: 30px;
+}
+.border-line h2
+{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+.game-page img
+{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.game-head-1
+{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.game-head
+{
+        color: white;
+    width: 45%;
+}
+.game-head img
+{
+    width: 230px;
+    height: 20px;
+}
+.game-head h1,h3
+{
+    font-family: sans-serif;
+    margin:20px 0px 20px 0px;
+}
+.game-head h1
+{
+    font-size: 52px;
+}
+.game-head p
+{
+    font-size: 20px;
+    line-height: 25px;
+}
+.side-show
+{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    padding: 30px;
+}
+.side-show img
+{
+    width: 150px;
+    height: 200px;
+}
+.lefti
+{
+    position: absolute;
+    left: -20px;
+    top: 100px;
+    color: white;
+    font-size: 40px;
+}
+.righti
+{
+    
+    position: absolute;
+    right: -20px;
+    top: 100px;
+    color: white;
+    font-size: 40px;
+}
+.game-about
+{
+    min-height: 100vh;
+    position: relative;
+    top: 70px;
+}
+.game-about img
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.game-about1
+{
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    gap: 30px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 50px  0px;     
+}
+.game-about-cont
+{
+    width: 40%;  
+    height: 300px;
+    overflow: hidden; 
+}
+.game-about-cont h1
+{
+    color: #1da1f2;
+    text-align: center;
+    margin: 20px;
+}
+.game-about-cont p
+{
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+}
+.about-image
+{
+    width: 40%; 
+    height: 300px;
+    position: relative;
+    padding: 80px;
+}
+.about-image-1
+{
+    width: 50%;
+}
+.first-image
+{
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    z-index: 90;
+    left: 245px;
+    top: 50px;
+    border-radius: 20px;
+     border-radius: 25px;
+      animation-name: rightimg;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-timeline: view();
+      animation-range: entry;
+    
+}
+@keyframes rightimg 
+{
+    0%
+    {
+        opacity: 0.5;
+        left: 350px;
+    }
+    100%
+    {
+        opacity: 1;
+        left: 245;
+    }
+}
+.first-image img
+{
+    width: 100%;
+    height: 100%;
+     border-radius: 20px;
+}
+.second-image img
+{
+    width: 100%;
+    height: 100%;
+     border-radius: 20px; 
+}
+.second-image
+{
+    height: 300px;
+    position: absolute;
+    left: 120px;
+    top: 70;
+    width: 120px;
+    z-index: 90;
+    border-radius: 20px;
+      animation-name: leftimg;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-timeline: view();
+      animation-range: entry;
+}
+@keyframes leftimg
+{
+    0%
+    {
+        opacity: 0.5;
+        left: 15px;
+    }
+    100%
+    {
+        opacity: 1;
+        left: 120px;
+    }
+}
+.border-line
+{
+    display: flex;
+    color: white;
+    height: 60px;
+    position: relative;
+    width: 260px;
+    float: right;
+    padding-top: 10px;
+}
+.border-line p
+{
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    top: 22px;
+    letter-spacing: 3px;
+    left: 30px;
+}
+.border-line h2
+{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+.blue-line-1
+{
+    width: 140px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px solid #1da1f2;
+    position: absolute;
+    top: 0px;
+    left: 160px;
+}
+.blue-line-2
+{
+    width: 120px;
+    height: 160px;
+    border-radius: 20px;
+    border: 2px solid #1da1f2;
+    position: absolute;
+    top: 160px;
+    left: 70px;
+}
+.blue-line-3
+{
+    width: 120px;
+    height: 160px;
+    border-radius: 20px;
+    border: 2px solid #1da1f2;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+.ball
+{
+    position: absolute;
+     border-radius: 50%;
+      box-shadow: 0px 0px 20px black;
+      animation-name: ball;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-timeline: view();
+      animation-range: entry;
+}
+@keyframes ball 
+{
+    0%
+    {
+        transform: scale(0);   
+        opacity: 0;
+    }
+    50% 
+    {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.ball-1
+{
+    width: 50px;
+    height:50px;
+    background-color: #00FFFF;
+    border-radius: 50%;
+    top: 20px;
+    left: 135px;
+}
+.ball-2
+{
+    width: 80px;
+    height:80px;
+    background-color: #00FFFF;
+    border-radius: 50%;
+    top: 190px;
+    left: 360px;
+    z-index: 100;
+}
+.ball-3
+{
+     width: 18px;
+    height:18px;
+    background-color: #d81bc5;
+    border-radius: 50%;
+    top: 80px;
+    left: 70px;
+}
+.ball-4
+{
+     width: 10px;
+    height:10px;
+    background-color:  #0521c1;
+    top: 40px;
+    left: 100px;
+}
+.ball-5
+{
+    width: 30px;
+    height:30px;
+    background-color: #0521c1;
+    top: 50px;
+    left: 400px;
+}
+.ball-6
+{
+      width: 25px;
+    height:25px;
+    background-color:  #0521c1;
+    top: 340px;
+    left: 400px;
+}
+.ball-7
+{
+       width: 20px;
+    height:20px;
+    background-color:   #d81bc5;
+    top: 350px;
+    left: 70px; 
+}
+.ball-8
+{
+     width: 25px;
+    height:25px;
+    background-color:  #0521c1 ;
+    top: 300px;
+    left: 30px;    
+}
+.ball-9
+{
+     width: 15px;
+    height:15px;
+    background-color:   #d81bc5;
+    top: 150px;
+    left: 380px;     
+}
+.ball-10
+{
+     width: 8px;
+    height:8px;
+    background-color: white;
+    top: 150px;
+    left: 20px; 
+}
+@media only screen and (min-width:300px) and (max-width:650px)
+{
+    nav .subNav{
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        left: 110%;
+        top: 92px;
+        width: 20%;
+        height: 50vh;
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 40px;
+        
+    }
+    .subNav a 
+    {
+        color: white;
+    }
+    nav label
+    {
+        display: block;
+        color: yellow;
+
+    }
+    .btn1
+    {
+        display: none;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:950px)
+{
+    .game-page
+    {
+        min-height: 700px;
+    }
+     .game-head-1
+     {
+        flex-direction: column;
+        padding-top: 80px;
+     }
+    .game-head
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .side-show
+    {
+        position: unset;
+    }
+    .righti, .lefti
+    {
+        position: unset;
+    }
+    .game-about1
+    {
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .game-about-cont 
+    {
+        width: 70%;
+        margin: auto;
+    }
+    .about-image
+    {
+        width: 60%;
+        left: -50px;
+        margin: auto;
+    }
+    .about-image-1
+    {
+        width: 100%;
+        margin-top: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media only screen and (min-width:300px) and (max-width:630px){
+.first-image{
+    height: 200px;
+    width: 100px;
+    right: 30px;
+}
+.ball-5 {
+    right: -30px;
+}
+.ball-9 {
+    top: 150px; 
+    right: -10px;
+}
+ball-2 {
+    right: -60px;
+  
+}
+.blue-line-3 {
+    top: 200px;
+    right: -40px;
+}
+    .game-about-cont {
+        width: 70%;
+        margin: 0;
+    }
+        .game-head {
+        width: 80%;
+        margin: 0px;
+    }
+    .second-image{
+    height: 200px; 
+    bottom: -20px;
+    width: 120px;
+    }
+    .ball-2{
+        width: 60px;
+    height: 60px;
+    background-color: #00FFFF;
+    border-radius: 50%;
+    top: 190px;
+    right: -54px;
+    z-index: 100;
+    }
+}

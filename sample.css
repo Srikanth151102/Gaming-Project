@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.side-show
+{
+    position:relative;
+    right: -50px;
+    bottom: -150px;
+    padding: 30px;
+    width: 350px;
+
+    border: 1px solid red;
+}
+.side-show img 
+{
+    width: 150px;
+    height: 150px;
+}
+.lefti
+{
+    position: absolute;
+    left: -20px;
+    top: 100px;
+    color: white;
+    font-size: 40px;
+}
+.righti
+{
+    
+    position: absolute;
+    right: -20px;
+    top: 100px;
+    color: white;
+    font-size: 40px;
+}
+.rightimgside
+{
+    margin-left: 20px;
+   
+}
+.leftimageside
+{
+    /* position: absolute; */
+    left: 200px;
+    
+}
+.leftso:checked~.leftimageside
+{
+    transform: scale(1.2);
+}
+.rightso:checked~.rightimgside
+{
+    transform: scale(1.2);
+}
+input
+{
+    display: none;
+}
+.lefti, .righti
+{
+    color: black;
+}
+@media only screen and (max-width:600px){
+.rightimgside
+{
+    display: none;
+}
+.devil-women
+{
+  /* display: none; */
+  position:absolute ;
+}  
+.side-show img
+{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.side-show
+{
+    width: 260px;
+    left: 0;
+}
+.leftso:checked~.devil-women{
+    display: block;
+    transform: scale(1);
+     left:40px;
+
+}
+.rightso:checked~.rightimgside{
+    display: block;
+    transform: scale(1);
+
+}
+.rightso:checked~.devil-women{
+    display: none;
+    opacity: 0;
+}
+}
