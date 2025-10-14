@@ -1369,7 +1369,7 @@ p
         left: 110%;
         top: 92px;
         width: 150px;
-        height: 300px;
+        height: 310px;
         border-radius: 5px;
         flex-direction: column;
         justify-content: start;
@@ -1679,7 +1679,7 @@ p
 }
 .about-image-1
 {
-    margin-top: 30px;
+    margin-top: -20px;
 }
 .first-image img
 {
