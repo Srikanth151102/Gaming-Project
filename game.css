@@ -1885,6 +1885,7 @@ display: none;
     position: relative;
     padding: 0px;
     left:-140px;
+    top: 0px;
     /* left:0px;
     top:380px; */
 }
