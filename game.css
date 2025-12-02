@@ -1345,12 +1345,12 @@ p
     width:45%;
    }
 }
-@media only screen and (min-width:950px) 
+/* @media only screen and (min-width:950px) 
 {
     .game-page{
         margin-top: 100px;
     }
-}
+} */
 @media only screen and (min-width:300px) and (max-width:700px) {
     .bc-rev3{
         display:none;
